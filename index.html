@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Voting System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="poll-container">
+        <h2>ম্যানেজার প্রার্থী হিসেবে দেখতে চাই</h2>
+
+        <form id="pollForm">
+            <label>
+                <input type="radio" name="vote" value="JavaScript">Atikur
+            </label><br>
+            <label>
+                <input type="radio" name="vote" value="Python"> Monir
+            </label><br>
+            <button type="button" onclick="submitVote()">Submit Vote</button>
+        </form>
+
+        <div id="result">
+            <h3>Results:</h3>
+            <p>Atikur: <span id="jsVotes">0</span></p>
+            <p>Monir: <span id="pyVotes">0</span></p>
+        </div>
+    </div>
+
+    <script src="./js/java.js"></script>
+</body>
+</html>
